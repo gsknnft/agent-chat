@@ -2,7 +2,7 @@
 
 Reusable React chat widget + hook for OpenAI-compatible SSE agent backends.
 
-Package: `@signalnet/agent-chat`
+Package: `@gsknnft/agent-chat`
 
 ## What this package provides
 
@@ -15,7 +15,7 @@ Package: `@signalnet/agent-chat`
 This package is part of the monorepo workspace.
 
 ```bash
-pnpm --filter @signalnet/agent-chat build
+pnpm --filter @gsknnft/agent-chat build
 ```
 
 Peer dependency:
@@ -27,7 +27,7 @@ Peer dependency:
 ```tsx
 "use client";
 
-import { AgentChatWidget } from "@signalnet/agent-chat";
+import { AgentChatWidget } from "@gsknnft/agent-chat";
 
 export default function Example() {
   return (
@@ -87,7 +87,7 @@ Expected SSE stream events:
 ```tsx
 "use client";
 
-import { useAgentChat } from "@signalnet/agent-chat";
+import { useAgentChat } from "@gsknnft/agent-chat";
 
 export function CustomChat() {
   const { messages, busy, error, send, clear } = useAgentChat({
@@ -111,9 +111,9 @@ export function CustomChat() {
 ## Development
 
 ```bash
-pnpm --filter @signalnet/agent-chat typecheck
-pnpm --filter @signalnet/agent-chat test
-pnpm --filter @signalnet/agent-chat build
+pnpm --filter @gsknnft/agent-chat typecheck
+pnpm --filter @gsknnft/agent-chat test
+pnpm --filter @gsknnft/agent-chat build
 ```
 
 ## Troubleshooting
