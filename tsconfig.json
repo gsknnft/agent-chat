@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "module": "nodenext",
+        "target": "esnext",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "rootDir": "./src",
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "moduleResolution": "nodenext",
+        "composite": true,
+        "paths": {
+            "@/*": [
+                "./*"
+            ]
+        },
+        "types": [
+            "vite/client"
+        ],
+        "resolveJsonModule": true
+    },
+    "include": [
+        "./src"
+    ],
+    "references": [
+        {
+            "path": "../ascension"
+        },
+        {
+            "path": "../qtransform"
+        }
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
