@@ -4,6 +4,12 @@ Reusable React chat widget + hook for OpenAI-compatible SSE agent backends.
 
 Package: `@gsknnft/agent-chat`
 
+This package follows the same internal package contract used by the reusable workspace libraries:
+
+- build output lives in `dist/`
+- `main`, `types`, and `exports` point at built artifacts
+- source under `src/` is authoring input, not the runtime entrypoint
+
 ## What this package provides
 
 - `AgentChatWidget`: floating UI widget with message stream, tool-call chips, and input panel.
